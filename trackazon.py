@@ -33,7 +33,7 @@ def send_email_alert(title, price):
 def job():
     print("Running Trackazon...")
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # show browser
+        browser = p.chromium.launch(headless=True)  # show browser
         page = browser.new_page()
     
         page.goto("https://www.amazon.in/iQOO-Snapdragon-Processor-Slimmest-Smartphone/dp/B0DW48MM7C?ref=dlx_deals_dg_dcl_B0DW48MM7C_dt_sl10_61_pi&pf_rd_r=0TWY4WG3X4GGTWQHBJXZ&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61")#you can change the product link
