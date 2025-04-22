@@ -9,9 +9,9 @@ import csv
 
 
 def send_email_alert(title, price):
-    sender_email = "SENDER_EMAIL_ID"
-    sender_password = "APP_PASSWORD" #visit google security for app password[ex: 16 digit without space
-    recipient_email = "RECEIVER_EMAIL_ID"
+    sender_email = os.environ["SENDER_EMAIL_ID"]
+    sender_password = os.environ["APP_PASSWORD"] #visit google security for app password[ex: 16 digit without space
+    recipient_email = os.environ["RECEIVER_EMAIL_ID"]
 
     subject = "💰 Trackazon Alert - Price Dropped!"
     body = f"Product: {title}\nCurrent Price: ₹{price}\nLink: https://www.amazon.in/iQOO-Snapdragon-Processor-Slimmest-Smartphone/dp/B0DW48MM7C?ref=dlx_deals_dg_dcl_B0DW48MM7C_dt_sl10_61_pi&pf_rd_r=0TWY4WG3X4GGTWQHBJXZ&pf_rd_p=1ce42f93-7595-413b-b263-9a38e0c62f61"
