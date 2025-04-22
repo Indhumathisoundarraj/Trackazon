@@ -1,4 +1,7 @@
 name: Run Trackazon Daily
+env:
+  EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+  EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
 
 on:
   schedule:
