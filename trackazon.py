@@ -80,7 +80,7 @@ def job():
     print(f"{now} | Scraped: {title} | ₹{price}")
     
 #🔁 Run every hour (you can change to daily etc.)
-schedule.every(1).hours.do(job)#you can change the hours to seconds or minutes.
+schedule.every(1).minutes.do(job)#you can change the hours to seconds or minutes.
 
 print("Scheduler started... Ctrl+C to stop")
 
