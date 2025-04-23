@@ -15,3 +15,6 @@ Python • Playwright • Schedule • SMTP • GitHub Actions
 🔧 How to Run
 pip install -r requirements.txt
 python trackazon.py
+
+🛍️ Note:
+Due to Amazon's scraping restrictions on public/cloud servers, you can use sample/dummy product data to demonstrate automation and alerting. The original script supports real-time scraping when run locally.
